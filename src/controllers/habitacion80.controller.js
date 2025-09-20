@@ -1,3 +1,4 @@
+//Vector que muestra el id y el numero de habitacion
 let habitaciones = [
   { id: 1, noHabitacion: "Habitación 1" },
   { id: 2, noHabitacion: "Habitación 2" },
@@ -7,6 +8,7 @@ const index = (req, res) => {
     res.render('hbtcns/index80', { habitaciones });
 };
 
+//muestra las habitaciones creadas en el vector
 const show = (req, res) => {
 	const {id} = req.params;
 	const habitacion = habitaciones.find(habitaciones => habitaciones.id === parseInt(id));
@@ -17,10 +19,12 @@ const show = (req, res) => {
 	}
 };
 
+//envía la informacion
 const create = (req, res) => {
     res.render('hbtcns/create80');
 };
 
+//Funcion de flecha para agregar nueva habitacion al vector
 const store = (req, res) => {
     const { habitacion } = req.body;
     const nuevaHabitacion = {
