@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Habitaciones</title>
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+    <a href="/">Inicio</a>
+    <h1>Habitaciones</h1>
+    <ul>
+        <% habitaciones.forEach (habitacion => { %>
+
+            <a href="/hbtcns/<%= habitacion.id %>"> <li><%= habitacion.noHabitacion%></li> </a>
+
+        <% });%>
+    </ul>
+    <a href="/hbtcns/create80">Agregar nueva habitación</a>
+</body>
+</html>

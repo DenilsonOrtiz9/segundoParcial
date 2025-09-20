@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Agregar Habitación</title>
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="/">Inicio</a>
+            <a href="/views">Habitaciones</a>
+        </nav>
+    </header>
+    <h1>Agregar nueva Habitación</h1>
+    <form action="/hbtcns" method = "POST">
+        <label for="habitacion">Nombre del Objeto</label>
+        <input type="text" id="habitacion" name="habitacion" required>
+        <button type="submit">Crear</button>
+    </form>
+    <a href="/hbtcns">Volver</a>
+</body>
+</html>
